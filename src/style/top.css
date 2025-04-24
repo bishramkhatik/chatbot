@@ -1,0 +1,56 @@
+/* top.css */
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 270px; /* accounting for sidebar */
+  height: 60px;
+  width: calc(100% - 270px);
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 30px; /* 👈 shifts image + text slightly to right */
+}
+
+.profile-pic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.profile-name {
+  color: #f1f1f1;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.auth-btn {
+  background-color: #333; /* Matches dark theme */
+  color: #fff;
+  border: 1px solid #555;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #555;
+}

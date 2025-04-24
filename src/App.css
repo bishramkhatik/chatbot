@@ -1,0 +1,15 @@
+/* Reset margin and padding for full width layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Optional: prevents extra scroll */
+    background: rgba(0, 0, 0, 0.6); /* Matching dark background */
+    backdrop-filter: blur(8px);
+  }
+  
